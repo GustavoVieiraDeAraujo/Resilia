@@ -25,11 +25,11 @@ function entrada() {
     }
 
     if (verificarResposta(entrada) === true) {
-        alert(`Você acertou, relogio não tem o numero 13 nele,\nA isaPistoleira foi libertada de uma ilusão , restam duas agora ...`)
+        alert(`Você acertou, relogio não tem o numero 13.\nA IsaPistoleira foi libertada de uma ilusão,mas restam duas.`)
         window.location.href = "../Segunda\ Fase/SegundaFaseP3.html";
     }
     else {
-        alert(`Você errou, a resposta certa é relogio\nA isaPistoleira ficou presa eternamente na ilusão, enquanto o GabsVampirão cultiva o mal no mundo`)
+        alert(`Você errou, a resposta certa é relogio\nA IsaPistoleira ficou presa eternamente na ilusão, enquanto o GabsVampirão dissemina o mal no mundo\nTente Novamente`)
         window.location.href = "../Game\ Over/GameOver.html";
     }
 

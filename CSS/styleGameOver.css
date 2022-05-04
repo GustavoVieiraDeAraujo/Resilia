@@ -52,13 +52,17 @@
 }
 
 .section {
-    height: 90vh;
-    width: 100vw;
+    height: 80vh;
+    width: max-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+}
+
+.main>section {
+    border: 2px solid black;
 }
 
 .h1 {

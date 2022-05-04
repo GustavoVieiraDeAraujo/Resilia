@@ -25,11 +25,11 @@ function entrada() {
     }
 
     if (verificarResposta(entrada) === true) {
-        alert(`Você acertou, pote é a maior criação do ser humano, como tambem é a senha do esconderijo.\nAgora a LetCaçadora pode entrar no esconderijo secreto...`)
+        alert(`Você acertou, pote é a maior criação do ser humano.\nAgora a LetCaçadora pode entrar no esconderijo secreto.`)
         window.location.href = "../Segunda\ Fase/SegundaFaseP1.html";
     }
     else {
-        alert(`Você errou, a resposta certa é pote.\nO GabsVampirão conseguiu escapar, para continuar disseminando o mal na Terra`)
+        alert(`Você errou, a resposta certa é pote.\nO GabsVampirão conseguiu escapar, para continuar disseminando o mal na Terra\nTente Novamente`)
         window.location.href = "../Game\ Over/GameOver.html";
     }
 

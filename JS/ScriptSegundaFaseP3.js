@@ -25,11 +25,11 @@ function entrada() {
     }
 
     if (verificarResposta(entrada) === true) {
-        alert(`Você acertou, escuridão é a resposta certa,\nA isaPistoleira foi libera de mais uma ilusão, agora so resta uma...`)
+        alert(`Você acertou, escuridão é a resposta certa.\nA IsaPistoleira foi libera de mais uma ilusão, agora so resta uma.`)
         window.location.href = "../Terceira\ Fase/TerceiraFaseP3.html";
     }
     else {
-        alert(`Você errou, a resposta certa é relogio\nA isaPistoleira ficou presa eternamente na ilusão, enquanto o GabsVampirão cultiva o mal no mundo`)
+        alert(`Você errou, a resposta certa é relogio\nA IsaPistoleira ficou presa eternamente na ilusão, enquanto o GabsVampirão dissemina o mal no mundo\nTente Novamente`)
         window.location.href = "../Game\ Over/GameOver.html";
     }
 

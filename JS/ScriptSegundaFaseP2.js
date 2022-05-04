@@ -25,11 +25,11 @@ function entrada() {
     }
 
     if (verificarResposta(entrada) === true) {
-        alert(`Você acertou, 329 é o proximo numero da sequencia.\nGraças a sua ajuda o HudPadre conseguiu passar a ponte em segurança e chegar na armadilha final`)
+        alert(`Você acertou, 329 é o proximo numero da sequencia.\nGraças a sua ajuda o HudPadre conseguiu passar a ponte em segurança e chegar na armadilha final.`)
         window.location.href = "../Terceira\ Fase/TerceiraFaseP2.html";
     }
     else {
-        alert(`Você errou, a resposta certa é 329\nO HudPadre caiu enquanto estava atravessando a ponte, por que pisou em uma parte muito desgastada da ponte.\nTente Novamente`)
+        alert(`Você errou, a resposta certa é 329.\nO HudPadre caiu enquanto estava atravessando a ponte.\nTente Novamente`)
         window.location.href = "../Game\ Over/GameOver.html";
     }
 

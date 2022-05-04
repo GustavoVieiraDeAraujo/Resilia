@@ -25,11 +25,11 @@ function entrada() {
     }
 
     if (verificarResposta(entrada) === true) {
-        alert(`Você acertou, tem 4 gatos na sala.\nVoce ajudou a LetCaçadora a escapar da armadilha ...`)
+        alert(`Você acertou, tem 4 gatos na sala.\nVoce ajudou a LetCaçadora a escapar da armadilha.`)
         window.location.href = "../Terceira\ Fase/TerceiraFaseP1.html";
     }
     else {
-        alert(`Você errou, a resposta certa é 4.\nA LetCaçadora morreu furada pelos espinhos...`)
+        alert(`Você errou, a resposta certa é 4.\nA LetCaçadora morreu furada pelos espinhos.\nTente Novamente`)
         window.location.href = "../Game\ Over/GameOver.html";
     }
 

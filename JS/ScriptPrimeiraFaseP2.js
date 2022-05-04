@@ -25,7 +25,7 @@ function entrada() {
     }
 
     if (verificarResposta(entrada) === true) {
-        alert(`Você acertou, cebola é a resposta da charada.\nCom sua ajuda o HudPadre conseguiu avançar para proxima armadilha ...`)
+        alert(`Você acertou, cebola é a resposta da charada.\nCom sua ajuda o HudPadre conseguiu avançar para proxima armadilha.`)
         window.location.href = "../Segunda\ Fase/SegundaFaseP2.html";
     }
     else {

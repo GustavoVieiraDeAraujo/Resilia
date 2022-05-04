@@ -29,7 +29,7 @@ function entrada() {
         window.location.href = "../Fim\ do\ Jogo/fimDoJogo.html";
     }
     else {
-        alert(`Você errou, a resposta certa é relogio\nA isaPistoleira ficou presa eternamente na ilusão, enquanto o GabsVampirão cultiva o mal no mundo`)
+        alert(`Você errou, a resposta certa é 2\nA IsaPistoleira ficou presa eternamente na ilusão, enquanto o GabsVampirão dissemina o mal no mundo\nTente Novamente`)
         window.location.href = "../Game\ Over/GameOver.html";
     }
 

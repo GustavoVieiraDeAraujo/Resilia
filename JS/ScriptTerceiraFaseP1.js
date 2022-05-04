@@ -25,11 +25,11 @@ function entrada() {
     }
 
     if (verificarResposta(entrada) === true) {
-        alert(`Você acertou, While é uma função que executa um codigo N vezes até uma condição ser cumprida.\nApós ativar o protocolo de segurança, a LetCaçadora procurou o GabsVampirão e quando encontrou ele, jogou o Console-Alho nele e ele morreu.`)
+        alert(`Você acertou, while é a resposta certa.\nApós ativar o protocolo de segurança, a LetCaçadora procurou o GabsVampirão e quando encontrou ele, jogou o Console-Alho nele e ele morreu.`)
         window.location.href = "../Fim\ do\ Jogo/fimDoJogo.html";
     }
     else {
-        alert(`Você errou, a resposta certa é While.\nO GabsVampirão fugiu e continuara disseminando o caos pelo mundo`)
+        alert(`Você errou, a resposta certa é while.\nO GabsVampirão fugiu e continuou disseminando o caos pelo mundo\nTente Novamente`)
         window.location.href = "../Game\ Over/GameOver.html";
     }
 }
