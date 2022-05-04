@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Resilia</title>
+    <link rel="shortcut icon" href="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.resilia.com.br/&size=16" type="image/x-icon">
+</head>
+<body>
+    <style>
+        .Centralizar{
+            margin: auto;
+            text-align: center;
+        }
+    
+        .ConfigForms{
+            margin: auto;
+            padding: 30px;
+            border: 25px double black ;
+            border-radius: 50px;
+            max-height: max-content;
+            max-width: max-content;
+            text-align: center;
+            background-color:gray;
+        }
+        .ConfigLabel{
+            margin-top: 30px;
+        }
+        .ConfigTextarea{
+            border-width: 4px;
+            border-radius: 10px;
+            border-color: black;
+            vertical-align: middle;
+            resize: vertical;
+        }
+
+        .ConfingButton{
+            margin-top: 30px;
+            padding: auto;
+            border-width: 4px;
+            border-color: white;
+            background-color: black;
+        }
+
+        .ConfigNomeE-mail{
+            font-size: 20px;
+            width:  100%;
+            height: 30%;
+            text-align: center;
+            border-width: 4px;
+            border-color:black;
+            border-radius: 10px;
+            display:inline-flex;
+            padding: auto;
+        }
+
+        .ConfigNascimento{
+            font-size:20px;
+            width:50%;
+            height:30%;
+            text-align: center;
+            border-width: 4px;
+            border-color:black;
+            border-radius: 10px;
+            display:inline-flex;
+            padding: auto;
+        }
+        .ConfigCpf{
+            font-size:20px;
+            width:50%;
+            height:30%;
+            text-align: center;
+            border-width: 4px;
+            border-color:black;
+            border-radius:10px;
+            display:inline-flex;
+            padding: auto;
+        }
+
+        input:focus,textarea:focus{
+            outline-color: blue;
+            outline-width: 20px;
+        }
+        body{
+            background-image:url(https://azevedocontabilidade.com.br/wp-content/uploads/2019/12/A-importancia-da-Gestao-de-Pessoas-no-seu-escritorio-3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            background-attachment: fixed;
+            transform: scale(1.0);
+           
+        }
+    </style>
+
+    <!--method(get ou post)="metodo http para enviar dados para o servidor"---> 
+    <form class="ConfigForms" action="/(Url para onde os dados serão enviados" method="post">
+        <h1 class="Centralizar" ;>
+            Formulario Resilia
+        </h1>
+          
+        <p class="Centralizar">
+                <!--"for = vincular o label à um campo do formulario, o qual é defino pelo id na tag input"-->
+            <br>
+                <label class="ConfigLabel" for="nome" >
+                    <font size="5" color="black" face="Arial" > 
+                        <strong>
+                            Nome Completo:
+                        </strong>
+                    </font>
+                </label>
+            <br>
+                <input class="ConfigNomeE-mail" type="text" id="nome"  required="required"/>
+        </p>
+        <p class="Centralizar">
+            <br>
+                <label class="ConfigLabel" for="e-mail">
+                    <font size="5" color="black" face="Arial">
+                        <strong>
+                            E-mail:
+                        </strong>
+                    </font>
+                </label>
+            <br>
+            <input class="ConfigNomeE-mail" type="text" id="e-mail"  required="required" />
+        </p>
+        <p class="Centralizar">
+            <br>
+                <label class="ConfigLabel" for="ano de nascimento">
+                    <font size="5" color="black" face="Arial">
+                        <strong>
+                            Data de Nascimento:
+                        </strong>
+                    </font>
+                </label>
+            <br>
+            <input class="ConfigNascimento" type="date" id="ano de nascimento"  required="required" />
+        </p>
+        <p class="Centralizar">
+            <!--pattern = para formatar a entrada do input-->
+            <br>
+                <label class="ConfigLabel" for="CPF">
+                    <font size="5" color="black" face="Arial">
+                        <strong>
+                            CPF:
+                        </strong>
+                    </font>
+                </label>
+            <br>
+            <input class="ConfigCpf" type="text" id="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"\ title="Digite um CPF no formato: xxx.xxx.xxx-xx"/>
+        </p>
+        <p class="Centralizar">
+            <!--"textarea é para adicionar um bloco de texto como entrada(mais de uma linha)"-->
+            <br>
+                <label class="ConfigLabel" for="comentario">
+                    <font size="5" color="black" face="Arial">
+                        <strong>
+                            Um pouco sobre você:
+                        </strong>
+                    </font>
+                </label>
+            <br>
+            <textarea class="ConfigTextarea" id="comentario" cols="35" rows="8" minlength="100" required="required"></textarea>
+        </p>
+        <p class="button">
+            <!--"O button possui tres tipos, sendo eles:submit(envia os dados para a url do action),reset(redefini os campos para o valor padrão(em branco), alem de ser considerado uma má pratica) e button(sem função, util para JS)"-->
+            <button type="submit" class="ConfingButton">
+                <font size="4" color="white" face="Arial">
+                    <strong>
+                        Enviar seu formulario
+                    </strong>
+                </font>
+            </button>
+        </p>
+    </form>   
+</body>
+</html>
