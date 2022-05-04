@@ -1,0 +1,114 @@
+.containerHeader{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid yellow;
+    font-size: 50px;
+    color: white;
+    padding-right:  10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.containerMain{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 1220px;
+    height: 125vmax;
+    border: 2px solid yellow;
+    padding: 20px;
+    border-top: none;
+}
+.containerDiv{
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    height: 10px;
+    width: 690px;
+}
+.containerFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid yellow;
+    border-top: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.styleFigure{
+    margin-block: 0px;
+    margin-inline: 0px;
+}
+.styleButton {
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    height: 40px;
+    transition: all 0.5s;
+}
+.styleList{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    list-style-type: none;
+}
+.styleImg{
+    border: 2px solid yellow;
+    height: 350px;
+    width: 350px;
+    transition: all 2s;
+}
+button:hover{
+    height: 50px;
+    color: yellow;
+    border: 2px solid yellow;
+}
+img:hover{
+    height:400px;
+    width:400px ;
+}
+strong:hover{
+    font-size: 60px;
+    color: yellow;
+}
+
+@media (max-width: 700px){
+    .containerHeader{
+        width: 695px;
+        height: 200px;
+        padding: 0px;
+    }
+    .containerDiv{
+        flex-direction: column;
+        justify-content: center;
+    }
+    strong{
+        display: none;
+        width: 0px;
+        height: 0px;
+        font-size: 0px;
+    }
+    .containerMain{
+        width: 655px;
+        padding-top: 20px;
+        height: 750vmax;
+        flex-direction:row;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    .styleImg{
+        width: 500px;
+        height: 400px;
+    }
+}
