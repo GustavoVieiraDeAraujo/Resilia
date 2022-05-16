@@ -1,0 +1,88 @@
+.flex-body{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 130vh;
+    background-color:black;
+    margin: 10px;
+}
+.flex-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 120vh;
+    width: 50vw;
+}
+.flex-header{
+    display: flex;
+    justify-content: space-between;
+    border:5px solid gray;
+    background-color: silver;
+    height: max-content;
+}
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid gray;
+    border-top: 0;
+    height: 80%;
+    background-color: silver;
+    background-image: url(../Imagens/Backgroud.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    gap: 20px;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid gray;
+    border-top: 0;
+    background-color: silver;
+    height: 10%;
+}
+
+.flex-section-criptografia{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.flex-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.display-none{
+    display: none;
+}
+
+.style-figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: max-content;
+}
+
+.style-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.style-select{
+    width: 42%;
+}
+
+.style-button{
+    width: 100%;
+}

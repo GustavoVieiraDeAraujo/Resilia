@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Formulario-Passinho do Romano/CSS/style.css">
+    <script defer type="text/javascript" src="../Formulario-Passinho do Romano/Java Script/logic.js"></script>
+    <link rel="shortcut icon" href="../Formulario-Passinho do Romano/Imagens/Favicon.png" type="image/x-icon" /> 
+    <title>Passinho do Romano</title>
+</head>
+
+<body class="flex-body">
+    <form class="flex-form">
+
+        <!--Cabeçalho-->
+        <header class="flex-header">
+            <figure class="style-figure">
+                <img class="style-img" src="../Formulario-Passinho do Romano/Imagens/ImagemHeader.png" alt="Capacete Gladiador" height="50px" width="50px">
+            </figure>
+            <h1>
+                Passinho do Romano
+            </h1>
+            <figure class="style-figure">
+                <img class="style-img" src="../Formulario-Passinho do Romano/Imagens/ImagemHeader.png" alt="Capacete Gladiador" height="50px" width="50px">
+            </figure>
+        </header>
+
+        <!--Principal-->
+        <main class="flex-main">
+            <section class="flex-section-criptografia">
+                <label for="opções">
+                    <h2>Escolha uma Criptografia</h2>
+                </label>  
+                <select class="style-select" id="opções" name="Qual a codificação?">]
+                    <option value="Cifra de Cesar"> Cifra de Cesar </option>
+                    <option value="Base64"> Base64 </option>
+                </select>
+            </section>
+                
+            <section class="flex-section-codifica-decodifica" id="codificaOuDecodifica">
+                <h2>
+                    Codificar ou Decodificar ?
+                </h2>
+                <nav class="style-nav">
+                    <div>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Codificar</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">Decodificar</label>
+                    </div>
+                </nav>
+            </section>
+                
+            <section id="CifraDeCesarCodifica" class="display-none">
+                <h3>
+                    Cifra de César
+                </h3>
+                <input class="style-input" type="text" placeholder="Digite um deslocamento" id="deslocamentoCodifica" class="style-input">
+                <input class="style-input" type="text" placeholder="Digite uma mensagem" id="entradaCifraDeCesarCodifica" class="style-input">
+                <button class="style-button" id="codificarCifraDeCesar">Codificar Mensagem !</button>
+                <input  readonly class="style-input" type="text" placeholder="Mensagem Codificada" id="saidaCifraDeCesarCodifica" class="style-input">
+            </section>
+        
+
+            <section id="CifraDeCesarDecodifica" class="display-none">
+                <h3>
+                    Cifra de César
+                </h3>
+                <input type="text" placeholder="Digite um deslocamento" id="deslocamentoDecodifica" class="style-input">
+                <input type="text" placeholder="Digite uma mensagem" id="entradaCifraDeCesarDecodifica" class="style-input">
+                <button id="decodificarCifraDeCesar" class="style-button">Decodificar Mensagem !</button>
+                <input readonly type="text" placeholder="Mensagem Decodificada" id="saidaCifraDeCesarDecodifica" class="style-input">
+            </section>
+
+
+            <section id="Base64Codifica" class="display-none">
+                <h3>
+                    Base64
+                </h3>
+                <input type="text" placeholder="Digite uma mensagem" id="entradaBase64Codifica" class="style-input">
+                <button id="codificarBase64" class="style-button">Codificar Mensagem !</button>
+                <input placeholder="Mensagem Codificada" readonly type="text" id="saidaBase64Codifica" class="style-input">
+            </section>
+
+            <section id="Base64Decodifica" class="display-none">
+                <h3>
+                    Base64
+                </h3>
+                <input type="text" placeholder="Digite uma mensagem" id="entradaBase64Decodifica" class="style-input">
+                <button id="decodificarBase64" class="style-button">Decodificar Mensagem !</button>
+                <input placeholder="Mensagem Decodificada" readonly type="text" id="saidaBase64Decodifica" class="style-input">
+            </section>
+        </main>
+
+        <!--Rodapé-->
+        <footer class="flex-footer">
+            <h1>
+                Todos os direitos reservados
+            </h1>
+        </footer>
+    </form>
+</body>
+</html>
